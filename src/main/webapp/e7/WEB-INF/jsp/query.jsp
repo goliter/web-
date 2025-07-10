@@ -1,0 +1,14 @@
+<jsp:useBean id="user" scope="request" type="com.e7.entity.User"/>
+<%@ page pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+用户id：${user.id } <br>
+用户名称：${user.name } <br>
+注册时间：${user.insertTime}
+</body>
+</html>
