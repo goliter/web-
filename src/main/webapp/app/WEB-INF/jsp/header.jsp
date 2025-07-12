@@ -25,6 +25,10 @@ uri="http://java.sun.com/jsp/jstl/core" %>
     font-size: 16px;
     transition: background 0.2s;
   }
+  nav ul li a.active {
+    background: #3498db;
+    border-bottom: 3px solid #2980b9;
+  }
   nav ul li a:hover {
     background: #34495e;
   }
@@ -35,12 +39,12 @@ uri="http://java.sun.com/jsp/jstl/core" %>
 <header>
   <nav>
     <ul>
-      <li><a href="#/">首页</a></li>
-      <li><a href="#/major">专业介绍</a></li>
-      <li><a href="#/lab">实验室</a></li>
-      <li><a href="#/teacher">教师队伍</a></li>
-      <li><a href="#/career">就业指南</a></li>
-      <li><a href="#/news">新闻公告</a></li>
+      <li><a href="#/" data-page="home">首页</a></li>
+      <li><a href="#/major" data-page="major">专业介绍</a></li>
+      <li><a href="#/lab" data-page="lab">实验室</a></li>
+      <li><a href="#/teacher" data-page="teacher">教师队伍</a></li>
+      <li><a href="#/career" data-page="career">就业指南</a></li>
+      <li><a href="#/news" data-page="news">新闻公告</a></li>
       <li class="right"><a href="<c:url value='/admin'/>">后台管理</a></li>
     </ul>
   </nav>

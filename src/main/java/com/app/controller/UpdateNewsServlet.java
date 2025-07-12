@@ -11,6 +11,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 
 @WebServlet("/app/updatenews")
 public class UpdateNewsServlet extends HttpServlet {
@@ -23,7 +25,9 @@ public class UpdateNewsServlet extends HttpServlet {
         String content = req.getParameter("content");
         String author = req.getParameter("author");
         LocalDateTime publishTime = LocalDateTime.parse(req.getParameter("publishTime"));
-        News news = new News(id, title, content, publishTime, author, null);
+        // 将LocalDateTime转换为java.util.Date
+        Date publishDate = Date.from(publishTime.atZone(ZoneId.systemDefault()).toInstant());
+        News news = new News(id, title, content, publishDate, author, null);
         newsService.updateNews(news);
         resp.sendRedirect(req.getContextPath() + "/app/news");
     }
