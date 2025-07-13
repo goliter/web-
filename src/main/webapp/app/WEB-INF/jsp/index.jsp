@@ -93,6 +93,23 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
         border-radius: 12px;
         font-size: 12px;
       }
+      /* 新增导航按钮样式 */
+      .sub-nav .section-btn {
+        background: none;
+        border: none;
+        padding: 8px 16px;
+        margin: 0 4px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.3s;
+      }
+      .sub-nav .section-btn:hover {
+        background-color: #f0f0f0;
+      }
+      .sub-nav .section-btn.active {
+        background-color: #3498db;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -113,7 +130,7 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
             <h2>学院简介</h2>
             <div class="intro-content">
               <p>东北林业大学计算机与控制工程学院成立于2001年，是学校重点建设的工科学院之一。学院设有计算机科学与技术、自动化、电气工程及其自动化、物联网工程四个本科专业，拥有计算机科学与技术一级学科硕士点和控制科学与工程一级学科硕士点。</p>
-              <p>学院坚持以教学为中心，以科研为支撑，注重学生创新能力培养，先后承担国家自然科学基金、省部级科研项目多项，在人工智能、智能控制、林业信息化等领域形成了鲜明特色。</p>
+              <p>学院坚持以教学为中心，以科研为支撑，注重学生创新ABILITY培养，先后承担国家自然科学基金、省部级科研项目多项，在人工智能、智能控制、林业信息化等领域形成了鲜明特色。</p>
             </div>
           </div>
         </section>
@@ -232,7 +249,7 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
             <h1>专业简介</h1>
             <div class="card">
               <p>软件工程专业成立于2005年，是学校重点建设的特色专业，2020年入选国家级一流本科专业建设点。专业以培养具备软件工程理论与实践能力的高素质人才为目标，注重学生创新能力和工程实践能力的培养。</p>
-              <p>本专业拥有一支结构合理、教学经验丰富的教师队伍，其中教授8人，副教授12人，博士学位教师占比85%。近年来，专业教师主持国家级科研项目10余项，省部级项目20余项，发表高水平学术论文100余篇。</p>
+              <p>本专业拥有一支结构合理、教学经验丰富的教师队伍，其中教授8人，副教授12人，学位教师占比85%。近年来，专业教师主持国家级科研项目10余项，省部级项目20余项，发表高水平学术论文100余篇。</p>
             </div>
           </section>
 
@@ -310,10 +327,10 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
         <div class="sub-nav">
           <div class="container">
             <ul>
-              <li><a href="#/directions/ai" onclick="showSection('ai-direction')">人工智能</a></li>
-              <li><a href="#/directions/web" onclick="showSection('web-direction')">Web开发</a></li>
-              <li><a href="#/directions/mobile" onclick="showSection('mobile-direction')">移动应用开发</a></li>
-              <li><a href="#/directions/security" onclick="showSection('security-direction')">网络安全</a></li>
+              <li><button class="section-btn active" onclick="showSection('ai-direction', this)">人工智能</button></li>
+              <li><button class="section-btn" onclick="showSection('web-direction', this)">Web开发</button></li>
+              <li><button class="section-btn" onclick="showSection('mobile-direction', this)">移动应用开发</button></li>
+              <li><button class="section-btn" onclick="showSection('security-direction', this)">网络安全</button></li>
             </ul>
           </div>
         </div>
@@ -460,9 +477,9 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
         <div class="sub-nav">
           <div class="container">
             <ul>
-              <li><a href="#/teacher/professors" onclick="showSection('professors')">教授</a></li>
-              <li><a href="#/teacher/associate-professors" onclick="showSection('associate-professors')">副教授</a></li>
-              <li><a href="#/teacher/lecturers" onclick="showSection('lecturers')">讲师</a></li>
+              <li><button class="section-btn active" onclick="showSection('professors', this)">教授</button></li>
+              <li><button class="section-btn" onclick="showSection('associate-professors', this)">副教授</button></li>
+              <li><button class="section-btn" onclick="showSection('lecturers', this)">讲师</button></li>
             </ul>
           </div>
         </div>
@@ -537,21 +554,9 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
       <div id="career" class="page">
         <div class="sub-nav">
           <ul>
-            <li>
-              <a href="#/career/industry" onclick="showSection('industry')"
-                >行业趋势</a
-              >
-            </li>
-            <li>
-              <a href="#/career/companies" onclick="showSection('companies')"
-                >合作企业</a
-              >
-            </li>
-            <li>
-              <a href="#/career/alumni" onclick="showSection('alumni')"
-                >校友风采</a
-              >
-            </li>
+            <li><button class="section-btn active" onclick="showSection('industry', this)">行业趋势</button></li>
+            <li><button class="section-btn" onclick="showSection('companies', this)">合作企业</button></li>
+            <li><button class="section-btn" onclick="showSection('alumni', this)">校友风采</button></li>
           </ul>
         </div>
         <main>
@@ -559,7 +564,7 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
             <h1>行业趋势</h1>
             <div class="card">
               <h2>软件工程行业发展趋势分析</h2>
-              <p>随着数字化转型的深入，软件工程行业正呈现以下发展趋势：</p>
+              <p>随着数字化转形的深入，软件工程行业正呈现以下发展趋势：</p>
               <ol>
                 <li><strong>人工智能与机器学习融合</strong>：AI技术正逐步融入各类软件产品，智能推荐、自动化决策等功能成为标配</li>
                 <li><strong>低代码/无代码开发普及</strong>：可视化编程工具降低开发门槛，加速应用交付</li>
@@ -647,133 +652,79 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
       </div>
     </main>
     <script>
-      // 路由配置 - 支持二级路由
+      // 移除原有的路由配置中sections相关部分
       const routes = {
-        "/": { page: "home" },
-        "/major": {
-          page: "major",
-          sections: {
-            "/intro": "intro",
-            "/directions": "directions",
-          },
-          defaultSection: "intro",
-        },
-        "/teacher": {
-          page: "teacher",
-          sections: {
-            "/professors": "professors",
-            "/associate-professors": "associate-professors",
-            "/lecturers": "lecturers",
-          },
-          defaultSection: "professors",
-        },
-        "/career": {
-          page: "career",
-          sections: {
-            "/industry": "industry",
-            "/companies": "companies",
-            "/alumni": "alumni",
-          },
-          defaultSection: "industry",
-        },
-        "/lab": { page: "lab" },
-        "/news": { page: "news", servlet: "/app/news" }, // 添加servlet配置
+        '/':           { page: 'home',     title: '软件工程专业网站' },
+        '/major':      { page: 'major',    title: '专业介绍' },
+        '/directions': { page: 'directions', title: '专业方向' },
+        '/lab':        { page: 'lab',      title: '实验室' },
+        '/teacher':    { page: 'teacher', title: '教师队伍' },
+        '/career':     { page: 'career', title: '就业指南' },
+        '/news':       { page: 'news', title: '新闻公告' }
       };
-
-      // 路由处理函数
+      
+      // 修改路由处理函数，移除二级路由逻辑
       function handleRoute() {
-        // 修复路径解析逻辑
-        const path = window.location.hash.slice(1) || '/';
-        console.log('当前路径:', path); // 添加调试日志
-        let pageId = null;
-        let sectionId = null;
-        let matchedRoute = null;
-
-        // 改进路由匹配逻辑：先尝试精确匹配，再尝试一级路由匹配
-        // 1. 尝试精确匹配完整路径
-        if (routes[path]) {
-          matchedRoute = routes[path];
-          pageId = matchedRoute.page;
-        } else {
-          // 2. 尝试匹配一级路由
-          const pathSegments = path.split('/').filter(segment => segment);
-          const firstSegment = pathSegments.length > 0 ? `/${pathSegments[0]}` : '/';
-          
-          if (routes[firstSegment]) {
-            matchedRoute = routes[firstSegment];
-            pageId = matchedRoute.page;
-
-            // 处理二级路由
-            if (matchedRoute.sections && pathSegments.length > 1) {
-              const sectionPath = `/${pathSegments[1]}`;
-              sectionId = matchedRoute.sections[sectionPath] || matchedRoute.defaultSection;
-            } else if (matchedRoute.sections) {
-              // 如果有sections但没有提供二级路径，使用默认section
-              sectionId = matchedRoute.defaultSection;
-            }
-          } else {
-            // 3. 如果没有匹配到任何路由，默认使用首页
-            matchedRoute = routes['/'];
-            pageId = matchedRoute.page;
-          }
-        }
-
-        // 隐藏所有页面
-        document.querySelectorAll('.page').forEach(page => {
-          page.classList.remove('active');
-        });
-
-        // 显示当前页面
-        if (pageId) {
-          const activePage = document.getElementById(pageId);
-          if (activePage) {
-            activePage.classList.add('active');
-            console.log('显示页面:', pageId); // 添加调试日志
-
-            // 处理页面标题
-            const pageTitles = {
-              home: '软件工程专业网站',
-              major: '专业介绍',
-              lab: '实验室',
-              teacher: '教师队伍',
-              career: '就业指南',
-              news: '新闻公告',
-            };
-            document.title = pageTitles[pageId] || '软件工程专业网站';
-
-            // 处理二级导航
-            if (sectionId) {
-              showSection(sectionId);
-            }
-          } else {
-            console.error('未找到页面元素:', pageId);
-            // 如果找不到页面元素，默认显示首页
-            document.getElementById('home').classList.add('active');
-            console.log('显示默认页面: home');
-          }
-        } else {
-          console.error('未匹配到路由:', path);
-          // 默认显示首页
-          document.getElementById('home').classList.add('active');
-          console.log('显示默认页面: home');
+        if (window.routeHandling) return;
+        window.routeHandling = true;
+        try {
+          // → 1. 把 hash 拿好、trim、补 /
+          let raw = window.location.hash.substring(1) || '/';
+          raw = raw.trim();
+          if (!raw.startsWith('/')) raw = '/' + raw;
+          console.log('[路由调试] 规范后 raw =', raw);
+      
+          // → 2. 获取一级路由
+          const level1 = raw.split('/')[1] ? '/' + raw.split('/')[1] : '/';
+          console.log('[路由调试] 一级 =', level1);
+      
+          // → 3. 拿 config
+          let cfg = routes[level1];
+          if (!cfg) { cfg = routes['/']; console.warn('找不到一级', level1); }
+          const pageId = cfg.page.trim();
+          console.log('[路由调试] 显示页面 →', pageId);
+      
+          // → 4. 切页面
+          document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+          document.getElementById(pageId).classList.add('active');
+        } catch (e) {
+          console.error('路由异常', e);
+        } finally {
+          window.routeHandling = false;
         }
       }
-
-      // 子导航切换函数
-      function showSection(sectionId) {
-        // 隐藏同页面所有section
-        const activePage = document.querySelector(".page.active");
-        activePage.querySelectorAll("section").forEach((section) => {
-          section.style.display = "none";
+      
+      // 新增区块切换函数
+      function showSection(sectionId, button) {
+        // 隐藏当前页面所有区块
+        const activePage = document.querySelector('.page.active');
+        activePage.querySelectorAll('section').forEach(section => {
+          section.style.display = 'none';
         });
-        // 显示目标section
-        activePage.querySelector("#" + sectionId).style.display = "block";
+      
+        // 显示目标区块
+        const targetSection = activePage.querySelector(`#${sectionId}`);
+        if (targetSection) {
+          targetSection.style.display = 'block';
+        }
+      
+        // 更新按钮状态
+        activePage.querySelectorAll('.section-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
       }
 
-      // 监听hash变化
-      window.addEventListener("hashchange", handleRoute);
-      // 初始加载
-      document.addEventListener("DOMContentLoaded", handleRoute);
+      // 恢复路由初始化函数
+      function initRouter() {
+        window.removeEventListener('hashchange', handleRoute);
+        window.removeEventListener('load', handleRoute);
+        window.addEventListener('hashchange', handleRoute);
+        window.addEventListener('load', handleRoute);
+        console.log('[路由系统] 初始化完成');
+        handleRoute();  // 页面加载时执行一次
+      }
+      initRouter();
     </script>
   </body>
 </html>
