@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/")
+@WebServlet("/index")
 public class IndexServlet extends HttpServlet {
     private final NewsService newsService = ServiceFactory.getNewsService();
 

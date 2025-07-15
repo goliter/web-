@@ -855,6 +855,74 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
         </main>
       </div>
 
+      <!-- 实验页面 -->
+      <div id="experiments" class="page">
+        <main style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; margin: 0; padding: 20px;">
+          <div style="display: flex; flex-direction: column; align-items: center; min-height: 100vh;">
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px 40px; margin-bottom: 40px; border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+              <h1 style="color: white; font-size: 2.5rem; margin-bottom: 10px; text-align: center; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">🚀 Goliter的Web实验室</h1>
+              <p style="color: rgba(255, 255, 255, 0.8); text-align: center; font-size: 1.1rem; font-weight: 300; margin: 0;">Welcome to my experimental playground</p>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 40px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); max-width: 800px; width: 100%; margin-bottom: 30px;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
+                <a href="./experiment/ex1/register.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">01</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">用户注册系统</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">包含表单验证、用户交互的注册页面实验</div>
+                </a>
+
+                <a href="./experiment/ex2/table-css.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">02</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">表格样式设计</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">CSS表格美化与响应式设计实践</div>
+                </a>
+
+                <a href="./experiment/ex3/layout-css.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">03</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">布局设计实验</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">Flexbox与Grid布局的综合应用</div>
+                </a>
+
+                <a href="./experiment/ex4/layout.html" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">04</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">高级布局技术</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">现代CSS布局技术的深入探索</div>
+                </a>
+
+                <a href="com/filter/login" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">05</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">过滤器与登录</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">Java Web过滤器机制与用户认证</div>
+                </a>
+
+                <a href="listteachers" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">06</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">教师信息管理</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">数据库交互与信息展示系统</div>
+                </a>
+
+                <a href="e7" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">07</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">第七个实验</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">探索更多Web开发技术与实践</div>
+                </a>
+
+                <a href="e8" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 25px; transition: all 0.3s ease; text-decoration: none; color: white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; display: block;">
+                  <div style="font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">08</div>
+                  <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600;">第八个实验</div>
+                  <div style="font-size: 0.9rem; opacity: 0.9; line-height: 1.5;">Web开发综合技术应用实验</div>
+                </a>
+              </div>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
+              <p>✨ 持续更新中，欢迎探索每一个实验 ✨</p>
+            </div>
+          </div>
+        </main>
+      </div>
+
       <!-- 行业趋势详情页面 -->
       <div id="career-industry" class="page">
         <main class="container">
@@ -2544,6 +2612,7 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
         '/career/industry': { page: 'career-industry', title: '行业趋势分析' },
         '/career/companies': { page: 'career-companies', title: '合作企业' },
         '/career/alumni': { page:'career-alumni', title: '校友风采' },
+        '/experiments': { page: 'experiments', title: 'Web实验室' },
         '/news':       { page: 'news', title: '新闻公告' }
       };
       
