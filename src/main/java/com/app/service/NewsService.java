@@ -10,4 +10,5 @@ public interface NewsService {
     void addNews(News news);
     News getNews(String id);
     void updateNews(News news);
+    void deleteNews(String id);
 }

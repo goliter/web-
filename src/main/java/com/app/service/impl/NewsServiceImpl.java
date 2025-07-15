@@ -129,21 +129,21 @@ public class NewsServiceImpl implements NewsService {
             PreparedStatement st = conn.prepareStatement(sql)) {
             st.setString(1, news.getTitle());
             st.setString(2, news.getContent());
-            // 假设错误代码为：
-            // news.setPublishTime(LocalDateTime.now());
-            
-            // 替换为以下代码：
-            // 1. 使用Timestamp转换（推荐，更简洁）
-            news.setPublishTime(Timestamp.valueOf(LocalDateTime.now()));
-            
-
-            // 第111行错误代码：
-            // news.setPublishTime(LocalDateTime.now());
-            
-            // 替换为正确的转换代码：
-            news.setPublishTime(Date.from(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant()));
+            st.setTimestamp(3, new Timestamp(news.getPublishTime().getTime()));
             st.setString(4, news.getAuthor());
             st.setString(5, news.getId());
+            st.executeUpdate();
+        } catch (SQLException e) {
+            logger.warning(e.getMessage());
+        }
+    }
+
+    @Override
+    public void deleteNews(String id) {
+        String sql = "DELETE FROM news WHERE id=?";
+        try(Connection conn = DataSourceUtils.getConnection();
+            PreparedStatement st = conn.prepareStatement(sql)) {
+            st.setString(1, id);
             st.executeUpdate();
         } catch (SQLException e) {
             logger.warning(e.getMessage());
