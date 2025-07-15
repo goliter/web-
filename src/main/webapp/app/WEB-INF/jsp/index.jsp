@@ -620,108 +620,65 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
 
       <!-- 专业方向页面 -->
       <div id="directions" class="page">
-        <div class="sub-nav">
-          <div class="container">
-            <ul>
-              <li><button class="section-btn active" onclick="showSection('ai-direction', this)">人工智能</button></li>
-              <li><button class="section-btn" onclick="showSection('web-direction', this)">Web开发</button></li>
-              <li><button class="section-btn" onclick="showSection('mobile-direction', this)">移动应用开发</button></li>
-              <li><button class="section-btn" onclick="showSection('security-direction', this)">网络安全</button></li>
-            </ul>
-          </div>
-        </div>
-        <main class="container">
-          <section id="ai-direction">
-            <h1>人工智能方向</h1>
-            <div class="card">
-              <h2>培养目标</h2>
+        <main>
+          <h1>专业方向</h1>
+          <div class="lab-list">
+            <div class="direction-module card">
+              <h2><a href="#/directions/ai">人工智能方向</a></h2>
               <p>培养掌握人工智能基本理论、方法和技术，能从事机器学习、自然语言处理、计算机视觉等领域研究与应用开发的高级专门人才。</p>
-
-              <h2>核心课程</h2>
               <ul>
-                <li>人工智能导论</li>
-                <li>机器学习</li>
-                <li>深度学习</li>
-                <li>自然语言处理</li>
-                <li>计算机视觉</li>
-                <li>数据挖掘</li>
-                <li>智能系统设计</li>
+                <li><strong>核心课程：</strong>机器学习、深度学习、自然语言处理</li>
+                <li><strong>就业方向：</strong>AI算法工程师、机器学习工程师、数据科学家</li>
+                <li><strong>平均起薪：</strong>15-25K/月</li>
               </ul>
-
-              <h2>就业方向</h2>
-              <p>毕业生可在互联网公司、科研院所、金融机构等单位从事人工智能算法工程师、机器学习工程师、数据科学家等工作。</p>
-
-              <h2>实践项目</h2>
-              <ul>
-                <li>基于深度学习的图像识别系统</li>
-                <li>智能问答系统设计与实现</li>
-                <li>推荐系统开发</li>
-                <li>自动驾驶仿真平台开发</li>
-              </ul>
+              <div class="card-actions">
+                <a href="#/directions/ai" class="btn btn-primary">查看详情</a>
+              </div>
             </div>
-          </section>
 
-          <section id="web-direction" style="display: none">
-            <h1>Web开发方向</h1>
-            <div class="card">
-              <h2>培养目标</h2>
+            <div class="direction-module card">
+              <h2><a href="#/directions/web">Web开发方向</a></h2>
               <p>培养掌握现代Web开发技术，能从事大型网站设计与开发、Web应用系统架构设计的高级专门人才。</p>
-
-              <h2>核心课程</h2>
               <ul>
-                <li>Web前端开发</li>
-                <li>后端开发技术</li>
-                <li>数据库系统原理</li>
-                <li>Web框架应用</li>
-                <li>分布式系统</li>
-                <li>微服务架构</li>
-                <li>DevOps实践</li>
+                <li><strong>核心课程：</strong>前端开发、后端技术、微服务架构</li>
+                <li><strong>就业方向：</strong>前端工程师、后端工程师、全栈工程师</li>
+                <li><strong>平均起薪：</strong>12-20K/月</li>
               </ul>
-
-              <h2>就业方向</h2>
-              <p>毕业生可在各类IT企业从事Web前端工程师、后端开发工程师、全栈开发工程师、系统架构师等工作。</p>
+              <div class="card-actions">
+                <a href="#/directions/web" class="btn btn-primary">查看详情</a>
+              </div>
             </div>
-          </section>
 
-          <section id="mobile-direction" style="display: none">
-            <h1>移动应用开发方向</h1>
-            <div class="card">
-              <h2>培养目标</h2>
+            <div class="direction-module card">
+              <h2><a href="#/directions/mobile">移动应用开发方向</a></h2>
               <p>培养掌握移动应用开发技术，能从事iOS、Android平台应用开发和跨平台移动应用开发的高级专门人才。</p>
-
-              <h2>核心课程</h2>
               <ul>
-                <li>移动应用开发基础</li>
-                <li>iOS应用开发</li>
-                <li>Android应用开发</li>
-                <li>跨平台应用开发</li>
-                <li>移动UI设计</li>
-                <li>移动应用性能优化</li>
-                <li>移动后端开发</li>
+                <li><strong>核心课程：</strong>iOS开发、Android开发、跨平台开发</li>
+                <li><strong>就业方向：</strong>移动端工程师、iOS开发工程师、Android工程师</li>
+                <li><strong>平均起薪：</strong>13-22K/月</li>
               </ul>
+              <div class="card-actions">
+                <a href="#/directions/mobile" class="btn btn-primary">查看详情</a>
+              </div>
             </div>
-          </section>
 
-          <section id="security-direction" style="display: none">
-            <h1>网络安全方向</h1>
-            <div class="card">
-              <h2>培养目标</h2>
+            <div class="direction-module card">
+              <h2><a href="#/directions/security">网络安全方向</a></h2>
               <p>培养掌握网络安全基本理论和技术，能从事网络安全防护、渗透测试、信息安全管理的高级专门人才。</p>
-
-              <h2>核心课程</h2>
               <ul>
-                <li>网络安全导论</li>
-                <li>密码学</li>
-                <li>操作系统安全</li>
-                <li>网络攻击与防御</li>
-                <li>Web安全</li>
-                <li>移动安全</li>
-                <li>数字取证技术</li>
+                <li><strong>核心课程：</strong>网络安全、渗透测试、密码学</li>
+                <li><strong>就业方向：</strong>安全工程师、渗透测试工程师、安全架构师</li>
+                <li><strong>平均起薪：</strong>14-24K/月</li>
               </ul>
+              <div class="card-actions">
+                <a href="#/directions/security" class="btn btn-primary">查看详情</a>
+              </div>
             </div>
-          </section>
+          </div>
         </main>
       </div>
+
+
 
       <!-- 实验室页面 -->
       <div id="lab" class="page">
@@ -755,165 +712,125 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
 
       <!-- 教师队伍页面 -->
       <div id="teacher" class="page">
-        <div class="sub-nav">
-          <div class="container">
-            <ul>
-              <li><button class="section-btn active" onclick="showSection('professors', this)">教授</button></li>
-              <li><button class="section-btn" onclick="showSection('associate-professors', this)">副教授</button></li>
-              <li><button class="section-btn" onclick="showSection('lecturers', this)">讲师</button></li>
-            </ul>
+        <main>
+          <h1>教师队伍</h1>
+          <div class="teacher-list">
+            <!-- 教授 -->
+            <div class="teacher-card card">
+              <img src="https://via.placeholder.com/150" alt="李教授照片">
+              <h2><a href="#/teacher/li">李教授</a></h2>
+              <p><strong>职务：</strong>博士，博士生导师，软件工程系主任</p>
+              <p><strong>研究方向：</strong>人工智能、机器学习、模式识别</p>
+              <p><strong>学术成果：</strong>主持国家级科研项目3项，发表SCI论文20余篇</p>
+              <div class="card-actions">
+                <a href="#/teacher/li" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
+
+            <div class="teacher-card card">
+              <img src="https://via.placeholder.com/150" alt="张教授照片">
+              <h2><a href="#/teacher/zhang">张教授</a></h2>
+              <p><strong>职务：</strong>博士，博士生导师</p>
+              <p><strong>研究方向：</strong>网络安全、区块链技术</p>
+              <p><strong>学术成果：</strong>主持国家级科研项目2项，省部级项目3项</p>
+              <div class="card-actions">
+                <a href="#/teacher/zhang" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
+
+            <!-- 副教授 -->
+            <div class="teacher-card card">
+              <img src="https://via.placeholder.com/150" alt="王副教授照片">
+              <h2><a href="#/teacher/wang">王副教授</a></h2>
+              <p><strong>职务：</strong>博士，硕士生导师</p>
+              <p><strong>研究方向：</strong>移动计算、嵌入式系统</p>
+              <p><strong>学术成果：</strong>参与省部级项目2项，发表EI论文10余篇</p>
+              <div class="card-actions">
+                <a href="#/teacher/wang" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
+
+            <div class="teacher-card card">
+              <img src="https://via.placeholder.com/150" alt="陈副教授照片">
+              <h2><a href="#/teacher/chen">陈副教授</a></h2>
+              <p><strong>职务：</strong>博士，硕士生导师</p>
+              <p><strong>研究方向：</strong>数据库系统、大数据技术</p>
+              <p><strong>学术成果：</strong>参与国家级项目2项，发表核心期刊论文10余篇</p>
+              <div class="card-actions">
+                <a href="#/teacher/chen" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
+
+            <!-- 讲师 -->
+            <div class="teacher-card card">
+              <img src="https://via.placeholder.com/150" alt="刘讲师照片">
+              <h2><a href="#/teacher/liu">刘讲师</a></h2>
+              <p><strong>职务：</strong>硕士</p>
+              <p><strong>研究方向：</strong>Web开发、前端技术</p>
+              <p><strong>学术成果：</strong>参与横向项目多项，发表教学研究论文3篇</p>
+              <div class="card-actions">
+                <a href="#/teacher/liu" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
+
+            <div class="teacher-card card">
+              <img src="https://via.placeholder.com/150" alt="赵讲师照片">
+              <h2><a href="#/teacher/zhao">赵讲师</a></h2>
+              <p><strong>职务：</strong>硕士</p>
+              <p><strong>研究方向：</strong>软件测试、质量保证</p>
+              <p><strong>学术成果：</strong>参与横向项目多项，获得教学成果奖1项</p>
+              <div class="card-actions">
+                <a href="#/teacher/zhao" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <main class="container">
-          <section id="professors">
-            <h1>教授</h1>
-            <div class="teacher-list">
-              <div class="teacher-card card">
-                <img src="https://via.placeholder.com/150" alt="李教授照片">
-                <h2><a href="#/teacher/li">李教授</a></h2>
-                <p>博士，博士生导师，软件工程系主任</p>
-                <p>研究方向：人工智能、机器学习、模式识别</p>
-                <div class="card-actions">
-                  <a href="#/teacher/li" class="btn btn-primary">查看详情</a>
-                </div>
-              </div>
-              <div class="teacher-card card">
-                <img src="https://via.placeholder.com/150" alt="张教授照片">
-                <h2><a href="#/teacher/zhang">张教授</a></h2>
-                <p>博士，博士生导师</p>
-                <p>研究方向：网络安全、区块链技术</p>
-                <div class="card-actions">
-                  <a href="#/teacher/zhang" class="btn btn-primary">查看详情</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="associate-professors" style="display: none">
-            <h1>副教授</h1>
-            <div class="teacher-list">
-              <div class="teacher-card card">
-                <img src="https://via.placeholder.com/150" alt="王副教授照片">
-                <h2><a href="#/teacher/wang">王副教授</a></h2>
-                <p>博士，硕士生导师</p>
-                <p>研究方向：移动计算、嵌入式系统</p>
-                <div class="card-actions">
-                  <a href="#/teacher/wang" class="btn btn-primary">查看详情</a>
-                </div>
-              </div>
-              <div class="teacher-card card">
-                <img src="https://via.placeholder.com/150" alt="陈副教授照片">
-                <h2><a href="#/teacher/chen">陈副教授</a></h2>
-                <p>博士，硕士生导师</p>
-                <p>研究方向：数据库系统、大数据技术</p>
-                <div class="card-actions">
-                  <a href="#/teacher/chen" class="btn btn-primary">查看详情</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="lecturers" style="display: none">
-            <h1>讲师</h1>
-            <div class="teacher-list">
-              <div class="teacher-card card">
-                <img src="https://via.placeholder.com/150" alt="刘讲师照片">
-                <h2><a href="#/teacher/liu">刘讲师</a></h2>
-                <p>硕士</p>
-                <p>研究方向：Web开发、前端技术</p>
-                <div class="card-actions">
-                  <a href="#/teacher/liu" class="btn btn-primary">查看详情</a>
-                </div>
-              </div>
-              <div class="teacher-card card">
-                <img src="https://via.placeholder.com/150" alt="赵讲师照片">
-                <h2><a href="#/teacher/zhao">赵讲师</a></h2>
-                <p>硕士</p>
-                <p>研究方向：软件测试、质量保证</p>
-                <div class="card-actions">
-                  <a href="#/teacher/zhao" class="btn btn-primary">查看详情</a>
-                </div>
-              </div>
-            </div>
-          </section>
         </main>
       </div>
 
       <!-- 就业指南页面 -->
       <div id="career" class="page">
-        <div class="sub-nav">
-          <ul>
-            <li><button class="section-btn active" onclick="showSection('industry', this)">行业趋势</button></li>
-            <li><button class="section-btn" onclick="showSection('companies', this)">合作企业</button></li>
-            <li><button class="section-btn" onclick="showSection('alumni', this)">校友风采</button></li>
-          </ul>
-        </div>
         <main>
-          <section id="industry">
-            <h1>行业趋势</h1>
-            <div class="card">
-              <h2>软件工程行业发展趋势分析</h2>
-              <p>随着数字化转形的深入，软件工程行业正呈现以下发展趋势：</p>
-              <ol>
-                <li><strong>人工智能与机器学习融合</strong>：AI技术正逐步融入各类软件产品，智能推荐、自动化决策等功能成为标配</li>
-                <li><strong>低代码/无代码开发普及</strong>：可视化编程工具降低开发门槛，加速应用交付</li>
-                <li><strong>云原生架构转型</strong>：微服务、容器化、DevOps等技术广泛应用，提升系统弹性和可扩展性</li>
-                <li><strong>数据安全与隐私保护加强</strong>：随着数据法规完善，安全开发成为必备能力</li>
-                <li><strong>元宇宙与虚拟现实技术</strong>：在教育、医疗、娱乐等领域开辟新应用场景</li>
-              </ol>
-              <h3>热门技术岗位需求</h3>
+          <h1>就业指南</h1>
+          <div class="lab-list">
+            <div class="career-module card">
+              <h2><a href="#/career/industry">行业趋势分析</a></h2>
+              <p>了解软件工程行业最新发展趋势，包括人工智能、云计算、大数据等热门技术方向的就业前景和薪资水平。</p>
               <ul>
-                <li>人工智能工程师：平均薪资15-30K/月</li>
-                <li>大数据开发工程师：平均薪资12-25K/月</li>
-                <li>云计算架构师：平均薪资20-40K/月</li>
-                <li>网络安全工程师：平均薪资15-30K/月</li>
-                <li>全栈开发工程师：平均薪资12-25K/月</li>
+                <li>AI工程师平均薪资15-30K/月</li>
+                <li>云计算架构师平均薪资20-40K/月</li>
+                <li>网络安全工程师平均薪资15-30K/月</li>
               </ul>
-            </div>
-          </section>
-          <section id="companies" style="display: none">
-            <h1>合作企业</h1>
-            <div class="lab-list">
-              <div class="card">
-                <h2>华为技术有限公司</h2>
-                <p>合作领域：人工智能、云计算、5G技术</p>
-                <p>合作形式：实习基地、联合培养、科研合作</p>
-                <p>每年招聘人数：约30人</p>
-                <p>典型岗位：软件开发工程师、算法工程师、云计算工程师</p>
-              </div>
-              <div class="card">
-                <h2>阿里巴巴集团</h2>
-                <p>合作领域：大数据、电子商务、移动应用开发</p>
-                <p>合作形式：实习基地、技术讲座、竞赛赞助</p>
-                <p>每年招聘人数：约25人</p>
-                <p>典型岗位：大数据开发工程师、前端开发工程师、测试工程师</p>
-              </div>
-              <div class="card">
-                <h2>腾讯科技有限公司</h2>
-                <p>合作领域：游戏开发、社交网络、人工智能</p>
-                <p>合作形式：实习基地、联合实验室、校园招聘</p>
-                <p>每年招聘人数：约20人</p>
-                <p>典型岗位：游戏开发工程师、后端开发工程师、AI算法工程师</p>
+              <div class="card-actions">
+                <a href="#/career/industry" class="btn btn-primary">查看详情</a>
               </div>
             </div>
-          </section>
-          <section id="alumni" style="display: none">
-            <h1>校友风采</h1>
-            <div class="lab-list">
-              <div class="card">
-                <h2>张明 (2015届毕业生)</h2>
-                <p>现任：字节跳动高级技术总监</p>
-                <p>主要成就：带领团队开发了短视频推荐算法系统，用户规模过亿</p>
-                <p>薪资水平：年薪80万+股票</p>
-                <p>寄语："扎实的基础+持续学习能力是软件工程领域立足的关键"</p>
-              </div>
-              <div class="card">
-                <h2>李娜 (2018届毕业生)</h2>
-                <p>现任：微软亚洲研究院研究员</p>
-                <p">主要成就：在国际顶会发表论文5篇，参与开发了多个自然语言处理模型</p>
-                <p>薪资水平：年薪60万+科研奖励</p>
-                <p>寄语："保持对技术的热情和好奇，勇于挑战前沿问题</p>
+
+            <div class="career-module card">
+              <h2><a href="#/career/companies">合作企业</a></h2>
+              <p>展示学院与知名企业的合作关系，包括华为、阿里巴巴、腾讯等头部互联网公司的校园招聘信息。</p>
+              <ul>
+                <li>华为技术有限公司 - 年招聘约30人</li>
+                <li>阿里巴巴集团 - 年招聘约25人</li>
+                <li>腾讯科技有限公司 - 年招聘约20人</li>
+              </ul>
+              <div class="card-actions">
+                <a href="#/career/companies" class="btn btn-primary">查看详情</a>
               </div>
             </div>
-          </section>
+
+            <div class="career-module card">
+              <h2><a href="#/career/alumni">校友风采</a></h2>
+              <p>展示优秀毕业生的职业发展轨迹和成就，为在校学生提供职业规划参考和励志榜样。</p>
+              <ul>
+                <li>张明 - 字节跳动高级技术总监</li>
+                <li>李娜 - 微软亚洲研究院研究员</li>
+                <li>王强 - 百度首席工程师</li>
+              </ul>
+              <div class="card-actions">
+                <a href="#/career/alumni" class="btn btn-primary">查看详情</a>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
 
@@ -934,6 +851,547 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
                 </c:forEach>
               </div>
             </section>
+          </div>
+        </main>
+      </div>
+
+      <!-- 行业趋势详情页面 -->
+      <div id="career-industry" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>行业趋势分析</h1>
+            <div class="breadcrumb">
+              <a href="#/career">就业指南</a> > <span>行业趋势分析</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-overview">
+              <h2>软件工程行业发展趋势</h2>
+              <p>随着数字化转型的深入，软件工程行业正呈现以下发展趋势：</p>
+              <ol>
+                <li><strong>人工智能与机器学习融合</strong>：AI技术正逐步融入各类软件产品，智能推荐、自动化决策等功能成为标配</li>
+                <li><strong>低代码/无代码开发普及</strong>：可视化编程工具降低开发门槛，加速应用交付</li>
+                <li><strong>云原生架构转型</strong>：微服务、容器化、DevOps等技术广泛应用，提升系统弹性和可扩展性</li>
+                <li><strong>数据安全与隐私保护加强</strong>：随着数据法规完善，安全开发成为必备能力</li>
+                <li><strong>元宇宙与虚拟现实技术</strong>：在教育、医疗、娱乐等领域开辟新应用场景</li>
+              </ol>
+
+              <h3>热门技术岗位需求</h3>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">15-30K</div>
+                  <div class="stat-label">AI工程师月薪</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">20-40K</div>
+                  <div class="stat-label">云计算架构师月薪</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">15-30K</div>
+                  <div class="stat-label">网络安全工程师月薪</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">12-25K</div>
+                  <div class="stat-label">全栈工程师月薪</div>
+                </div>
+              </div>
+
+              <h3>技能要求分析</h3>
+              <div class="direction-list">
+                <div class="direction-item">
+                  <h4>🤖 人工智能方向</h4>
+                  <ul>
+                    <li>深度学习框架（TensorFlow、PyTorch）</li>
+                    <li>机器学习算法原理</li>
+                    <li>Python编程语言</li>
+                    <li>数据处理与分析能力</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h4>☁️ 云计算方向</h4>
+                  <ul>
+                    <li>容器技术（Docker、Kubernetes）</li>
+                    <li>云平台服务（AWS、Azure、阿里云）</li>
+                    <li>微服务架构设计</li>
+                    <li>DevOps工具链</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <a href="#/career" class="btn btn-secondary">返回就业指南</a>
+          </div>
+        </main>
+      </div>
+
+      <!-- 合作企业详情页面 -->
+      <div id="career-companies" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>合作企业</h1>
+            <div class="breadcrumb">
+              <a href="#/career">就业指南</a> > <span>合作企业</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-list">
+              <div class="card">
+                <h2>华为技术有限公司</h2>
+                <p><strong>合作领域：</strong>人工智能、云计算、5G技术</p>
+                <p><strong>合作形式：</strong>实习基地、联合培养、科研合作</p>
+                <p><strong>每年招聘人数：</strong>约30人</p>
+                <p><strong>典型岗位：</strong>软件开发工程师、算法工程师、云计算工程师</p>
+                <p><strong>薪资范围：</strong>应届生15-25K/月，有经验者25-40K/月</p>
+                <p><strong>福利待遇：</strong>五险一金、年终奖、股权激励、带薪年假</p>
+              </div>
+
+              <div class="card">
+                <h2>阿里巴巴集团</h2>
+                <p><strong>合作领域：</strong>大数据、电子商务、移动应用开发</p>
+                <p><strong>合作形式：</strong>实习基地、技术讲座、竞赛赞助</p>
+                <p><strong>每年招聘人数：</strong>约25人</p>
+                <p><strong>典型岗位：</strong>大数据开发工程师、前端开发工程师、测试工程师</p>
+                <p><strong>薪资范围：</strong>应届生18-28K/月，有经验者30-50K/月</p>
+                <p><strong>福利待遇：</strong>六险一金、免费三餐、健身房、弹性工作</p>
+              </div>
+
+              <div class="card">
+                <h2>腾讯科技有限公司</h2>
+                <p><strong>合作领域：</strong>游戏开发、社交网络、人工智能</p>
+                <p><strong>合作形式：</strong>实习基地、联合实验室、校园招聘</p>
+                <p><strong>每年招聘人数：</strong>约20人</p>
+                <p><strong>典型岗位：</strong>游戏开发工程师、后端开发工程师、AI算法工程师</p>
+                <p><strong>薪资范围：</strong>应届生16-26K/月，有经验者28-45K/月</p>
+                <p><strong>福利待遇：</strong>五险一金、绩效奖金、股票期权、年度旅游</p>
+              </div>
+
+              <div class="card">
+                <h2>百度科技有限公司</h2>
+                <p><strong>合作领域：</strong>搜索技术、人工智能、自动驾驶</p>
+                <p><strong>合作形式：</strong>技术合作、人才培养、校园招聘</p>
+                <p><strong>每年招聘人数：</strong>约18人</p>
+                <p><strong>典型岗位：</strong>搜索算法工程师、AI研发工程师、自动驾驶工程师</p>
+                <p><strong>薪资范围：</strong>应届生17-27K/月，有经验者30-48K/月</p>
+                <p><strong>福利待遇：</strong>五险一金、餐饮补贴、技术津贴、培训机会</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <a href="#/career" class="btn btn-secondary">返回就业指南</a>
+          </div>
+        </main>
+      </div>
+
+      <!-- 校友风采详情页面 -->
+      <div id="career-alumni" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>校友风采</h1>
+            <div class="breadcrumb">
+              <a href="#/career">就业指南</a> > <span>校友风采</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-list">
+              <div class="card">
+                <h2>张明 (2015届毕业生)</h2>
+                <p><strong>现任职务：</strong>字节跳动高级技术总监</p>
+                <p><strong>主要成就：</strong>带领团队开发了短视频推荐算法系统，用户规模过亿</p>
+                <p><strong>薪资水平：</strong>年薪80万+股票期权</p>
+                <p><strong>职业轨迹：</strong>毕业后先后在腾讯、阿里巴巴工作，2020年加入字节跳动</p>
+                <p><strong>技术专长：</strong>推荐算法、大数据处理、分布式系统</p>
+                <p><strong>给学弟学妹的寄语：</strong>"扎实的基础+持续学习能力是软件工程领域立足的关键，要敢于挑战新技术"</p>
+              </div>
+
+              <div class="card">
+                <h2>李娜 (2018届毕业生)</h2>
+                <p><strong>现任职务：</strong>微软亚洲研究院研究员</p>
+                <p><strong>主要成就：</strong>在国际顶会发表论文5篇，参与开发了多个自然语言处理模型</p>
+                <p><strong>薪资水平：</strong>年薪60万+科研奖励</p>
+                <p><strong>职业轨迹：</strong>本科毕业后赴美深造，获得斯坦福大学博士学位，现在微软从事AI研究</p>
+                <p><strong>技术专长：</strong>自然语言处理、深度学习、机器学习</p>
+                <p><strong>给学弟学妹的寄语：</strong>"保持对技术的热情和好奇心，勇于挑战前沿问题，学术和工业界都有广阔天地"</p>
+              </div>
+
+              <div class="card">
+                <h2>王强 (2016届毕业生)</h2>
+                <p><strong>现任职务：</strong>百度首席工程师</p>
+                <p><strong>主要成就：</strong>负责百度自动驾驶核心算法开发，获得多项技术专利</p>
+                <p><strong>薪资水平：</strong>年薪70万+项目奖金</p>
+                <p><strong>职业轨迹：</strong>毕业后加入百度，从初级工程师成长为技术专家</p>
+                <p><strong>技术专长：</strong>计算机视觉、自动驾驶、机器学习</p>
+                <p><strong>给学弟学妹的寄语：</strong>"选择一个有前景的技术方向深耕，坚持学习和实践，机会总是留给有准备的人"</p>
+              </div>
+
+              <div class="card">
+                <h2>陈琳 (2017届毕业生)</h2>
+                <p><strong>现任职务：</strong>滴滴出行技术总监</p>
+                <p><strong>主要成就：</strong>主导了滴滴智能调度系统的设计与实现，提升运营效率30%</p>
+                <p><strong>薪资水平：</strong>年薪65万+股权激励</p>
+                <p><strong>职业轨迹：</strong>毕业后在美团工作3年，后加入滴滴担任技术管理岗位</p>
+                <p><strong>技术专长：</strong>分布式系统、算法优化、团队管理</p>
+                <p><strong>给学弟学妹的寄语：</strong>"除了技术能力，沟通协作能力同样重要，要培养全面的职业素养"</p>
+              </div>
+            </div>
+          </div>
+           <div class="action-bar">
+             <a href="#/career" class="btn btn-secondary">返回就业指南</a>
+           </div>
+         </main>
+       </div>
+
+      <!-- 人工智能方向详情页面 -->
+      <div id="directions-ai" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>人工智能方向</h1>
+            <div class="breadcrumb">
+              <a href="#/directions">专业方向</a> > <span>人工智能方向</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-overview">
+              <h2>培养目标</h2>
+              <p>培养掌握人工智能基本理论、方法和技术，具有扎实的数学基础和计算机科学基础，能够运用人工智能技术解决实际问题，能从事机器学习、自然语言处理、计算机视觉等领域研究与应用开发的高级专门人才。</p>
+
+              <h2>核心课程</h2>
+              <div class="direction-list">
+                <div class="direction-item">
+                  <h3>📚 基础理论课程</h3>
+                  <ul>
+                    <li>人工智能导论</li>
+                    <li>机器学习基础</li>
+                    <li>数据结构与算法</li>
+                    <li>线性代数与概率统计</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>🔬 核心专业课程</h3>
+                  <ul>
+                    <li>深度学习</li>
+                    <li>自然语言处理</li>
+                    <li>计算机视觉</li>
+                    <li>数据挖掘</li>
+                    <li>智能系统设计</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>💻 实践应用课程</h3>
+                  <ul>
+                    <li>Python程序设计</li>
+                    <li>机器学习实践</li>
+                    <li>深度学习框架应用</li>
+                    <li>AI项目开发</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2>就业前景与薪资</h2>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">15-25K</div>
+                  <div class="stat-label">应届生起薪</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">25-40K</div>
+                  <div class="stat-label">3年经验薪资</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">40-80K</div>
+                  <div class="stat-label">资深专家薪资</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">95%+</div>
+                  <div class="stat-label">就业率</div>
+                </div>
+              </div>
+
+              <h2>实践项目案例</h2>
+              <div class="lab-list">
+                <div class="card">
+                  <h3>基于深度学习的图像识别系统</h3>
+                  <p>使用卷积神经网络实现图像分类、目标检测等功能，应用于智能监控、医疗影像分析等领域。</p>
+                </div>
+                <div class="card">
+                  <h3>智能问答系统</h3>
+                  <p>基于自然语言处理技术，构建能够理解用户问题并给出准确答案的智能客服系统。</p>
+                </div>
+                <div class="card">
+                  <h3>推荐系统开发</h3>
+                  <p>利用协同过滤、深度学习等技术，为电商平台、视频网站等提供个性化推荐服务。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <a href="#/directions" class="btn btn-secondary">返回专业方向</a>
+          </div>
+        </main>
+      </div>
+
+      <!-- Web开发方向详情页面 -->
+      <div id="directions-web" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>Web开发方向</h1>
+            <div class="breadcrumb">
+              <a href="#/directions">专业方向</a> > <span>Web开发方向</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-overview">
+              <h2>培养目标</h2>
+              <p>培养掌握现代Web开发技术，具备前端和后端开发能力，熟练运用各种Web框架和工具，能从事大型网站设计与开发、Web应用系统架构设计的高级专门人才。</p>
+
+              <h2>核心课程</h2>
+              <div class="direction-list">
+                <div class="direction-item">
+                  <h3>🎨 前端开发</h3>
+                  <ul>
+                    <li>HTML5/CSS3</li>
+                    <li>JavaScript高级编程</li>
+                    <li>Vue.js/React框架</li>
+                    <li>响应式Web设计</li>
+                    <li>前端工程化</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>⚙️ 后端开发</h3>
+                  <ul>
+                    <li>Java Web开发</li>
+                    <li>Spring Boot框架</li>
+                    <li>Node.js开发</li>
+                    <li>RESTful API设计</li>
+                    <li>微服务架构</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>🗄️ 数据库与运维</h3>
+                  <ul>
+                    <li>MySQL/Redis数据库</li>
+                    <li>Linux系统管理</li>
+                    <li>Docker容器技术</li>
+                    <li>云平台部署</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2>技术发展路径</h2>
+              <div class="lab-list">
+                <div class="card">
+                  <h3>前端工程师</h3>
+                  <p><strong>技能要求：</strong>HTML/CSS/JavaScript、前端框架、UI/UX设计</p>
+                  <p><strong>薪资范围：</strong>12-20K/月（应届），20-35K/月（3年经验）</p>
+                </div>
+                <div class="card">
+                  <h3>后端工程师</h3>
+                  <p><strong>技能要求：</strong>Java/Python、数据库、分布式系统、云平台</p>
+                  <p><strong>薪资范围：</strong>14-22K/月（应届），25-40K/月（3年经验）</p>
+                </div>
+                <div class="card">
+                  <h3>全栈工程师</h3>
+                  <p><strong>技能要求：</strong>前后端开发、系统架构、项目管理</p>
+                  <p><strong>薪资范围：</strong>18-28K/月（应届），30-50K/月（3年经验）</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <a href="#/directions" class="btn btn-secondary">返回专业方向</a>
+          </div>
+        </main>
+      </div>
+
+      <!-- 移动应用开发方向详情页面 -->
+      <div id="directions-mobile" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>移动应用开发方向</h1>
+            <div class="breadcrumb">
+              <a href="#/directions">专业方向</a> > <span>移动应用开发方向</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-overview">
+              <h2>培养目标</h2>
+              <p>培养掌握移动应用开发技术，熟悉iOS和Android平台开发，具备跨平台开发能力，能从事移动应用设计、开发、测试和维护的高级专门人才。</p>
+
+              <h2>核心课程</h2>
+              <div class="direction-list">
+                <div class="direction-item">
+                  <h3>📱 iOS开发</h3>
+                  <ul>
+                    <li>Swift编程语言</li>
+                    <li>iOS开发基础</li>
+                    <li>UIKit框架</li>
+                    <li>Core Data数据存储</li>
+                    <li>iOS应用发布</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>🤖 Android开发</h3>
+                  <ul>
+                    <li>Kotlin编程语言</li>
+                    <li>Android开发基础</li>
+                    <li>Android Jetpack</li>
+                    <li>SQLite数据库</li>
+                    <li>Google Play发布</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>🔗 跨平台开发</h3>
+                  <ul>
+                    <li>Flutter框架</li>
+                    <li>React Native</li>
+                    <li>Xamarin开发</li>
+                    <li>混合应用开发</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2>行业应用场景</h2>
+              <div class="lab-list">
+                <div class="card">
+                  <h3>电商购物应用</h3>
+                  <p>开发具有商品浏览、购物车、支付等功能的移动电商应用，涉及用户体验设计和支付安全。</p>
+                </div>
+                <div class="card">
+                  <h3>社交媒体应用</h3>
+                  <p>构建社交平台，包括用户注册、内容发布、消息推送、音视频通话等核心功能。</p>
+                </div>
+                <div class="card">
+                  <h3>企业级应用</h3>
+                  <p>为企业开发办公自动化、客户管理、销售管理等移动办公应用，提升工作效率。</p>
+                </div>
+              </div>
+
+              <h2>就业方向与薪资</h2>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">13-22K</div>
+                  <div class="stat-label">应届生起薪</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">22-35K</div>
+                  <div class="stat-label">3年经验薪资</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">35-60K</div>
+                  <div class="stat-label">高级专家薪资</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">92%+</div>
+                  <div class="stat-label">就业率</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <a href="#/directions" class="btn btn-secondary">返回专业方向</a>
+          </div>
+        </main>
+      </div>
+
+      <!-- 网络安全方向详情页面 -->
+      <div id="directions-security" class="page">
+        <main class="container">
+          <div class="detail-header">
+            <h1>网络安全方向</h1>
+            <div class="breadcrumb">
+              <a href="#/directions">专业方向</a> > <span>网络安全方向</span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="lab-overview">
+              <h2>培养目标</h2>
+              <p>培养掌握网络安全基本理论和技术，具备网络安全防护、渗透测试、安全审计等能力，能从事网络安全防护、信息安全管理、安全产品开发的高级专门人才。</p>
+
+              <h2>核心课程</h2>
+              <div class="direction-list">
+                <div class="direction-item">
+                  <h3>🔒 安全基础</h3>
+                  <ul>
+                    <li>网络安全导论</li>
+                    <li>密码学基础</li>
+                    <li>操作系统安全</li>
+                    <li>网络协议安全</li>
+                    <li>信息安全法律法规</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>⚔️ 攻防技术</h3>
+                  <ul>
+                    <li>网络攻击与防御</li>
+                    <li>Web安全技术</li>
+                    <li>渗透测试技术</li>
+                    <li>恶意代码分析</li>
+                    <li>数字取证技术</li>
+                  </ul>
+                </div>
+                <div class="direction-item">
+                  <h3>🛡️ 安全管理</h3>
+                  <ul>
+                    <li>信息安全管理</li>
+                    <li>风险评估</li>
+                    <li>安全策略制定</li>
+                    <li>应急响应</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2>专业认证与证书</h2>
+              <div class="lab-list">
+                <div class="card">
+                  <h3>国际认证</h3>
+                  <p><strong>CISSP：</strong>信息系统安全专业人员认证</p>
+                  <p><strong>CEH：</strong>道德黑客认证</p>
+                  <p><strong>OSCP：</strong>攻击性安全认证专家</p>
+                </div>
+                <div class="card">
+                  <h3>国内认证</h3>
+                  <p><strong>CISP：</strong>国家注册信息安全专业人员</p>
+                  <p><strong>CISW：</strong>信息安全保障人员认证</p>
+                  <p><strong>NISP：</strong>国家信息安全水平考试</p>
+                </div>
+              </div>
+
+              <h2>就业方向与薪资</h2>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">14-24K</div>
+                  <div class="stat-label">应届生起薪</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">25-40K</div>
+                  <div class="stat-label">3年经验薪资</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">40-80K</div>
+                  <div class="stat-label">高级专家薪资</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">90%+</div>
+                  <div class="stat-label">就业率</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <a href="#/directions" class="btn btn-secondary">返回专业方向</a>
           </div>
         </main>
       </div>
@@ -2077,15 +2535,20 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
         '/teacher/chen': { page: 'teacher-chen', title: '陈副教授 - 个人简介' },
         '/teacher/liu': { page: 'teacher-liu', title: '刘讲师 - 个人简介' },
         '/teacher/zhao': { page: 'teacher-zhao', title: '赵讲师 - 个人简介' },
+        '/directions': { page: 'directions', title: '专业方向' },
+        '/directions/ai': { page: 'directions-ai', title: '人工智能方向' },
+        '/directions/web': { page: 'directions-web', title: 'Web开发方向' },
+        '/directions/mobile': { page: 'directions-mobile', title: '移动应用开发方向' },
+        '/directions/security': { page: 'directions-security', title: '网络安全方向' },
         '/career':     { page: 'career', title: '就业指南' },
+        '/career/industry': { page: 'career-industry', title: '行业趋势分析' },
+        '/career/companies': { page: 'career-companies', title: '合作企业' },
+        '/career/alumni': { page:'career-alumni', title: '校友风采' },
         '/news':       { page: 'news', title: '新闻公告' }
       };
       
       // 页面默认区块配置
       const pageDefaults = {
-        'directions': 'ai-direction',
-        'teacher': 'professors',
-        'career': 'industry'
       };
 
       // 简化的路由处理函数
@@ -2105,7 +2568,8 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
       
           // 如果没有找到完整路径匹配，则尝试主路径匹配
           if (!config) {
-            mainPath = '/' + path.split('/')[1] || '/';
+            const pathParts = path.split('/');
+            mainPath = pathParts.length > 1 && pathParts[1] ? '/' + pathParts[1] : '/';
             config = routes[mainPath];
           }
 
@@ -2113,6 +2577,14 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
           if (!config) {
             config = routes['/'];
             mainPath = '/';
+          }
+
+          // 确保config是有效的
+          if (!config || !config.page) {
+            console.error('[路由错误] 无效的路由配置:', { path, config });
+            // 强制跳转到首页
+            window.location.hash = '#/';
+            return;
           }
 
           const pageId = config.page;
@@ -2151,8 +2623,14 @@ uri="http://java.sun.com/jsp/jstl/core" %> <%@ include file="common-style.jsp"
       
       // 初始化页面默认区块
       function initPageDefaults(pageId) {
+        // 添加安全检查
+        if (!pageId || typeof pageId !== 'string') {
+          console.warn('[initPageDefaults] 无效的pageId:', pageId);
+          return;
+        }
+
         const defaultSection = pageDefaults[pageId];
-        if (defaultSection) {
+        if (defaultSection && typeof defaultSection === 'string') {
           const page = document.getElementById(pageId);
           if (page) {
             // 隐藏所有section

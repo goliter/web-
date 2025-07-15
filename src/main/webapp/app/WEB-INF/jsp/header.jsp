@@ -45,6 +45,7 @@ uri="http://java.sun.com/jsp/jstl/core" %>
       <li><a href="#/teacher" data-page="teacher">教师队伍</a></li>
       <li><a href="#/career" data-page="career">就业指南</a></li>
       <li><a href="#/news" data-page="news">新闻公告</a></li>
+      <li class="right"><a href="<c:url value='/a.html'/>">实验页面</a></li>
       <li class="right"><a href="<c:url value='/admin/dashboard'/>">后台管理</a></li>
     </ul>
   </nav>
